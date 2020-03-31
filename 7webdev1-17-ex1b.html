@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+                
+                                        <!-- Exercise 2 -->
+        <script>
+            /*
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            1. what does the following expression returns? 3 + 2
+            
+            ANSWER
+            The return = 5.
+            This is because 3 and 2 are numbers and the operator (+) will add them as numbers, returning 5
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            2. What does the following expression return? typeof (3);
+
+            ANSWER
+            The return = "number". 
+            The typeof method returns the data type and 3 is a number
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            3. What does the following expression return? typeof (3) === typeof (4.32);
+
+            ANSWER
+            The return is "true".
+            The answer is true because the strict compairism, compaires the data types of both   numbers i.e 3 and 4.32. and since they are both numbers, the return is true
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            4. What does the following expression return? 5 / 0;
+
+            ANSWER
+            Return = infinity.
+            This is because 0 a very small number and anything divided by 0 returns a very large number called infinity
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            5. What does the following expression return? 3 / "bob";
+
+            ANSWER
+            Return = NaN
+            This is because we can't devide a number by a string. The result will obviously not be a number. Equally. javascript can not do any reasonable type conversions
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            6. What does the following expression return? NaN === NaN;
+
+            ANSWER
+            Return = false
+            This is because NaN is the result of any non-sense operation. Therefore it can never be equal to itself or strictly be equal to itself.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            7. What does the following expression return? typeof(NaN);
+
+            ANSWER
+
+            Return = "number"
+            This is because NaN is a special kind of number which results in non semantic operations and computations
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            8.What does the following expression return? isNaN(NaN) :
+
+            ANSWER
+            True
+            isNaN is a method to verify if a given value is "Not a number" and NaN is obviously not a normal number like intergers and floats. This is because it results from operations that are non semantic
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            9.What does the following expression return ? Math.pow(2, 3);
+
+            ANSWER
+            return = 8
+            The Math.pow() inbulid method evaluates the exponent of 2 to the power 3. i.e 2*2*2 = 8
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            10.Describe how the following expression assigns a variable to a value.
+               var first_name = "cindy";
+
+
+               AMSWER:
+               The variable name is "first_name" and the value is a string called "cindy".
+               the "var" keyword creates a memory location to store the variable so as to readily make it available for future use or other computation
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            11.What is the value of the hello variable in the following expression ? var hello;
+
+
+            ANSWER:
+            return = undefined
+            By defauls, when a variable is called as such, with no value officially assigned, it gets a value called "undefined"
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            12.What does the following expression return? var y; y === "cool";
+
+            ANSWER:
+            return = false
+            This is because y is undefined. compairism with the string "cool", tends to using a strict comparism of "undefined" and "cool" which returns a false boolean since they are not exactly thesame.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            13.What does the following expression return? "some" + " person";
+
+            ANSWER:
+            return = "some person"
+            This occurs because we are adding two strings using the + operator. so it concatenates the strings
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            14. What does the following expression return?
+                var first = "Bart"
+                var last = "Simpson";
+                first + " " + last
+
+            ANSWER:
+            return = "Bart Simpson"
+            This is string concatenation of first name defined as "Bart", an string with a whitespace " " amd the last name defined as "simpson"
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            15.What does the following expression return? "cool".length;
+
+
+            ANSWER:
+            return: 4
+            The .length method, is a string operation method that returns the number of characters found in a string inclusing the whitespaces (if it is a spaced separated string). In the example above, the "cool" has 4 characters. C,O,O and L which adds up to 4
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            16.What does the following expression return? Explain the answer. "phat" === "phat";
+
+            ANSWER:
+            return = true
+            this strict comparism operator converts the strings to boolean and compairs them. They all have thesame values and data types (string) hence this is true
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            17.What does the following expression return? typeof ("cats");
+
+
+            ANSWER:
+            return = "string"
+            The typeof() method determines the data type of the word "cats" and since it is written in quotes (""), this returns a string data type.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            18.What does the following expression return? 3 + "bob"
+
+
+            ANSWER:
+            return = "3bob"
+            js identifies that we are trying to add a string and a number. It does a type convertion to make the operation meaningful. Its makes sense to convert the 3 to a string and add to "bob" which is equally a string. this is concatenation as opposed to adding them as number which is not feasible, since we cannot convert the string "bob" to a number data type
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            19.Round the number 4.87 to the nearest integer.
+
+            ANSWER:
+            math.round(4.87)
+            return = 5
+            This rounds up 4.87 to the nearest integer.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            20.Divide the number 6 by the string "2" and explain the result.
+
+
+            ANSWER:
+            var num1 = 6
+            var num2 = "2"
+            result = num1/num2
+            =3
+            We declare 2 variables num1 and num2. 
+            num1 is a number data type and num2 is a string
+            then we divide them using the / operator. the answer is 3 because there is type conversion converting the string "2" to the number 2 which is semantically correct.
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            21.What does the following expression return? Explain the result. 3 * "bob";
+
+
+            ANSWER:
+            return = NaN
+            The multiplication of a string and a number does not make sense. Equally, the program can not do any type conversion because the multiplication operator (*) does not sematically concatenates of return any result on strings. i.e the * operator is not applicable to strings
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            22.Declare the variables x and y.
+               Set the variable hobby to the string "programming'.
+
+            ANSWER:
+            var x;
+            var y;
+            var hobby = "programming"
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            23.What does the following expression return?
+               var sport; sport === undefined
+
+
+               ANSWER:
+               return = true
+               This is because the variable sport has just been called but no value officially assigned to it. So by default, it gets a value called "undefined". Compairing the sport variable which is equal to "undefined", with undefined will result in a boolean true
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            24.Demonstrate that "brogrammer" has the type "string".
+            
+            ANSWER:
+            typeof("brogrammer")
+            return = "string"
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            */
+        </script>
+    </body>
+</html>
